@@ -4,7 +4,7 @@ pipeline {
       stage('Deploy') {
           steps {
             // Run steps in the new directory context
-            sleep 51
+            sleep 48
             echo "hhhhh"
           }
       }
