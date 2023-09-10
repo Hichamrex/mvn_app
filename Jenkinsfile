@@ -1,22 +1,12 @@
 pipeline {
   agent any 
   stages {
-      stage('Clean') {
+      stage('Deploy') {
           steps {
             // Run steps in the new directory context
-            sh "mvn clean install"
+            sleep 50
+            echo "hhhhh"
           }
-      }
-      stage('Test') {
-         steps {
-                sh "mvn test"
-          }   
-      }
-
-      stage('Deploy') {
-        steps {
-               sh "mvn package"
-        }
       }
  }
 }
